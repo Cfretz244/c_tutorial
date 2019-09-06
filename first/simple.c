@@ -48,6 +48,7 @@ static char* strdup(char const* str) {
   // and allocate enough memory to copy it.
   size_t len = strlen(str) + 1;
   char* buff = malloc(sizeof(char) * len);
+  if (!buff) return NULL;
 
   // Walk both pointers forward and copy as we go.
   while (*str) *buff++ = *str++;
@@ -74,6 +75,7 @@ char* do_reverse(char const* in, char* out) {
 
 char* reverse(char const* str) {
   char* reversed = strdup(str);
+  if (!reversed) return NULL;
   do_reverse(str, reversed);
   return reversed;
 }
