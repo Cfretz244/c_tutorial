@@ -4,11 +4,11 @@ BIN = stack_tests
 
 all: $(BIN)
 
-$(BIN): stack_tests.c stack.o
-	$(CC) -std=$(STD) -g $^ -o $@
+$(BIN): stack_tests.c sstack.o
+	$(CC) -std=$(STD) $^ -o $@
 
 %.o: %.c
-	 $(CC) -std=$(STD) -g -c $< -o $@
+	 $(CC) -std=$(STD) -c $< -o $@
 
 clean:
 	rm *.o

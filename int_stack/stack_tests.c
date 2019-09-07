@@ -4,7 +4,7 @@
 
 /*----- Project Includes -----*/
 
-#include "stack.h"
+#include "sstack.h"
 
 /*----- Function Implementations -----*/
 
