@@ -90,3 +90,8 @@ size_t sstack_size(sstack_t const* stk) {
   // Return the size.
   return stk->pos + 1;
 }
+
+size_t sstack_capacity(sstack_t const* stk) {
+  (void) stk;
+  return SSTACK_SIZE;
+}
