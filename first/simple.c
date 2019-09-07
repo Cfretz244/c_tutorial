@@ -74,8 +74,12 @@ char* do_reverse(char const* in, char* out) {
 }
 
 char* reverse(char const* str) {
+  // Create a dynamically allocated copy of this
+  // null terminated string.
   char* reversed = strdup(str);
   if (!reversed) return NULL;
+
+  // Reverse it and return.
   do_reverse(str, reversed);
   return reversed;
 }
