@@ -47,7 +47,7 @@ static char* strdup(char const* str) {
   // Find out how large the string is
   // and allocate enough memory to copy it.
   size_t len = strlen(str) + 1;
-  char* buff = malloc(sizeof(char) * len);
+  char* buff = (char*) malloc(sizeof(char) * len);
   if (!buff) return NULL;
 
   // Walk both pointers forward and copy as we go.

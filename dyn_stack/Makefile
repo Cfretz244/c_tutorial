@@ -1,4 +1,4 @@
-CC = clang
+CC = gcc
 STD = c99
 BIN = stack_tests
 
