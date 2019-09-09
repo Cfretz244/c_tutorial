@@ -29,7 +29,7 @@ void dstack_destroy(dstack_t* stk);
 
 // Stack operations
 int dstack_push(dstack_t* stk, void const* val);
-void const* dstack_peek(dstack_t* stk);
+void* dstack_peek(dstack_t* stk);
 int dstack_pop(dstack_t* stk);
 size_t dstack_size(dstack_t const* stk);
 size_t dstack_capacity(dstack_t const* stk);

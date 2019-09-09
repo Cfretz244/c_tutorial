@@ -27,7 +27,7 @@ void sstack_destroy(sstack_t* stk);
 
 // Stack operations
 int sstack_push(sstack_t* stk, int64_t const* val);
-int64_t const* sstack_peek(sstack_t* stk);
+int64_t* sstack_peek(sstack_t* stk);
 int sstack_pop(sstack_t* stk);
 size_t sstack_size(sstack_t const* stk);
 size_t sstack_capacity(sstack_t const* stk);

@@ -56,7 +56,7 @@ int sstack_push(sstack_t* stk, int64_t const* val) {
   return 0;
 }
 
-int64_t const* sstack_peek(sstack_t* stk) {
+int64_t* sstack_peek(sstack_t* stk) {
   // Check error conditions.
   sanity_check(stk);
   if (stk->pos < 0) {

@@ -101,7 +101,7 @@ int main() {
   while (gstack_size(&stk)) {
     // Current value on the stack should be
     // one less than our local value.
-    string_t const* curr = (string_t const*) gstack_peek(&stk);
+    string_t* curr = (string_t*) gstack_peek(&stk);
     assert(!strcmp(curr->str, strs[idx--]->str));
 
     // Update and continue.

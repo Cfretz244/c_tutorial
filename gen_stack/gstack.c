@@ -82,7 +82,7 @@ int gstack_push(gstack_t* stk, void const* val) {
   return 0;
 }
 
-void const* gstack_peek(gstack_t* stk) {
+void* gstack_peek(gstack_t* stk) {
   // Check error conditions.
   sanity_check(stk);
   if (stk->pos < 0) {

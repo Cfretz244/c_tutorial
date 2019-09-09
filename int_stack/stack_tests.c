@@ -26,7 +26,7 @@ int main() {
   while (sstack_size(&stk)) {
     // Current value on the stack should be
     // one less than our local value.
-    int64_t const* curr = sstack_peek(&stk);
+    int64_t* curr = sstack_peek(&stk);
     assert(*curr + 1 == val);
 
     // Update and continue.

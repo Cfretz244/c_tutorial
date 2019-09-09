@@ -28,7 +28,7 @@ void gstack_destroy(gstack_t* stk);
 
 // Stack operations
 int gstack_push(gstack_t* stk, void const* val);
-void const* gstack_peek(gstack_t* stk);
+void* gstack_peek(gstack_t* stk);
 int gstack_pop(gstack_t* stk);
 size_t gstack_size(gstack_t const* stk);
 size_t gstack_capacity(gstack_t const* stk);

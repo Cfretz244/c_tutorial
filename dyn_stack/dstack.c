@@ -109,7 +109,7 @@ int dstack_push(dstack_t* stk, void const* val) {
   return 0;
 }
 
-void const* dstack_peek(dstack_t* stk) {
+void* dstack_peek(dstack_t* stk) {
   // Check error conditions.
   sanity_check(stk);
   if (stk->pos < 0) {
